@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>KLE</title>
+  <title>REG</title>
   <link rel="icon" type="image/gif/png" href="https://cdn4.iconfinder.com/data/icons/flatified/128/clipboard.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +12,12 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <link href="https://fonts.googleapis.com/css?family=Kanit:200" rel="stylesheet">
+<link rel="stylesheet" href="style.css" type="text/css"/>
+
+<link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+
 <style media="screen">
 
   .bg-cus{
@@ -76,10 +82,191 @@ body > div:nth-child(4){
         from { transform: rotate(0deg); }
         from { transform: rotate(360deg); }
       }
+      
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+input[type=password]::-ms-reveal, input[type=password]::-ms-clear {
+  display: none;
+}
+
+input[type="email"], input[type="password"], input[type="submit"] {
+  -webkit-border-top-left-radius: 360px;
+  -moz-border-top-left-radius: 360px;
+  -ms-border-top-left-radius: 360px;
+  border-top-left-radius: 360px;
+  -webkit-border-top-right-radius: 360px;
+  -moz-border-top-right-radius: 360px;
+  -ms-border-top-right-radius: 360px;
+  border-top-right-radius: 360px;
+  -webkit-border-bottom-left-radius: 360px;
+  -moz-border-bottom-left-radius: 360px;
+  -ms-border-bottom-left-radius: 360px;
+  border-bottom-left-radius: 360px;
+  -webkit-border-bottom-right-radius: 360px;
+  -moz-border-bottom-right-radius: 360px;
+  -ms-border-bottom-right-radius: 360px;
+  border-bottom-right-radius: 360px;
+}
+
+input[type="email"], input[type="password"] {
+  padding-left: 2.75em;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-image: url("11.jpg");
+  color: white;
+  border: 0;
+  padding: 8px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #660066;
+}
+
+label {
+  display: inline;
+  position: absolute;
+  top: 0.65em;
+  left: 2.30em;
+  color: #999999;
+}
+
+form {
+  position: relative;
+}
+
+form .row .row {
+  margin: 0 -0.9375rem;
+}
+
+body {
+  color: #999999;
+  background-size: cover;
+}
+
+/*p.intro1, p.intro2 {
+  text-align: center;
+  color: white;
+  font-size: 0.9em;
+  margin-bottom: 40px;
+  font-family: 'Open Sans';
+}
+
+p.intro2 {
+  opacity: 0;
+}*/
+
+.wrapper, .morphHeader {
+ font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  background-color: #f2f2f2;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-top-left-radius: 6px;
+  -ms-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-top-right-radius: 6px;
+  -ms-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-bottom-left-radius: 6px;
+  -ms-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-bottom-right-radius: 6px;
+  -ms-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.header, .footer, .morphHeader {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header, .morphHeader {
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-top-left-radius: 6px;
+  -ms-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-top-right-radius: 6px;
+  -ms-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-bottom-left-radius: 0;
+  -ms-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+  -ms-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 1em;
+  background-image: url("11.jpg");
+  padding: 1.5em;
+  color: white;
+}
+
+.username {
+  padding-top: 1.25rem;
+}
+
+.submit, .footer {
+  padding-bottom: 1.25rem;
+}
+
+.morphButton {
+  z-index: 999;
+  -webkit-border-top-left-radius: 360px;
+  -moz-border-top-left-radius: 360px;
+  -ms-border-top-left-radius: 360px;
+  border-top-left-radius: 360px;
+  -webkit-border-top-right-radius: 360px;
+  -moz-border-top-right-radius: 360px;
+  -ms-border-top-right-radius: 360px;
+  border-top-right-radius: 360px;
+  -webkit-border-bottom-left-radius: 360px;
+  -moz-border-bottom-left-radius: 360px;
+  -ms-border-bottom-left-radius: 360px;
+  border-bottom-left-radius: 360px;
+  -webkit-border-bottom-right-radius: 360px;
+  -moz-border-bottom-right-radius: 360px;
+  -ms-border-bottom-right-radius: 360px;
+  border-bottom-right-radius: 360px;
+}
+
+.morphButton, .morphHeader {
+  opacity: 0;
+  background-color: #9932CC;
+  text-align: center;
+}
+
+.loading, .success, .failure {
+  color: white;
+  line-height: 34px !important;
+  text-align: center;
+  margin-top:25%;
+}
+
+.tooltip p {
+  font-family: 'Open Sans';
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.columns {
+  position: relative;
+}
 </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 </head>
 <body>
+    
   <div class="container-fuid">
     <nav class="navbar navbar-expand-lg navbar-light bg-cus ">
   <a class="navbar-brand" href="#" style="color:white; font-weight: bold;"><i style="font-size:30px; color:white; " class="fas fa-graduation-cap"></i>ระบบบริการการศึกษา</a>
@@ -100,38 +287,59 @@ body > div:nth-child(4){
 
   </div>
 </nav>
+      
+      
+      
+      
+      
+      
   </div>
 <br>
-    <div class="container">
+   <div class="container">
       <div class="row align-items-center">
 
         <div class="col-12 mx-auto col-md-4 order-md-2">
-          <div class="card border-primary mb-12" >
-    <div class="card-header">เข้าสู่ระบบ</div>
-    <div class="card-body text-primary">
-      <form class="form-inline">
-        <div class="col-12  input-group mb-12">
- <div class="input-group-prepend">
-   <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
- </div>
- <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div><br>
-<div class="col-12  input-group mb-12">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
-  </div>
-  <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
-</div><br><br><br>
-<div class="col-12  input-group mb-12">
-  <button style="width:100%;" type="submit" class="btn btn-primary">เข้าสู่ระบบ</button>
-</div>
+<form method="post" autocomplete="off">
+	<div class="row">
+		<div class="wrapper large-12 columns large-centered small-12 small-centered">
+			<div class="row header">
+				<div class="large-12 columns"><b><h4>เข้าใช้งานระบบ</h4></b></div>
+			</div>
 
-      </form>
-    </div>
-  </div>
-        </div>
+			<div class="row username" >
+				<div class="large-9 columns large-centered">
+					<label for="username"><i class="fa fa-user"></i></label>
+					<input id="username" type="email" name="username" placeholder="username" required="required" />
+				</div>
+			</div>
 
-        <div class="col-12 mx-auto col-md-8 order-md-1 animated rubberBand">
+			<div class="row password">
+				<div class="large-9 columns large-centered">
+					<label for="password"><i class="fa fa-lock"></i></label>
+					<input id="password" type="password" name="pass" placeholder="password" required="required" />
+				</div>
+			</div>
+
+			<div class="row submit">
+				<div class="large-7 columns large-centered">
+					<input type="submit" value="เข้าสู่ระบบ" >
+				</div>
+			</div>
+		</div>
+	</div>
+        </div> 
+          <span class="morphButton">
+	<i class="fa fa-spinner fa-spin loading"></i>
+	<i class="fa fa-check success"></i>
+	<i class="fa fa-times failure"></i>
+</span>
+         
+</form>
+            
+
+
+          <!--สไลด์-->
+        <div class="col-12 mx-auto col-md-8 order-md-1">
           <div id="demo" class="carousel slide" data-ride="carousel" style="width:100%; height:40vh;">
   <!-- Indicators -->
   <ul class="carousel-indicators">
@@ -162,9 +370,16 @@ body > div:nth-child(4){
   </a>
 </div>
         </div>
+          
+          
       </div>
+</div>
+
+<br><br><br><br><br><br><br>
+        
+        
 <div class="row align-items-center">
-      <div class="col-12 mx-auto col-12 order-md-1 animated rubberBand">
+      <div class="col-12 mx-auto col-12 order-md-1">
         <div class="card border-primary mb-12">
           <div class="card-header">
             Quote
@@ -261,5 +476,11 @@ body > div:nth-child(4){
     </div>
   </div>
 </footer>
+ <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
 
 </html>
