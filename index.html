@@ -21,7 +21,7 @@
 <style media="screen">
 
   .bg-cus{
-background: linear-gradient(110deg,#33adff 60%, #006bb3 60%);}
+background-color:#9932CC;}
 #navbarSupportedContent > ul > li > a{
   color:white;
 
@@ -261,15 +261,24 @@ p.intro2 {
 .columns {
   position: relative;
 }
+.iop{
+  }
+@media only screen and (max-width: 600px) {
+    .navbar-brand{
+       width: 50%;
+    }
+    .logoM{display:initial;}
+}
+
 </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 </head>
 <body>
-    
+    <div class="iop">
   <div class="container-fuid">
     <nav class="navbar navbar-expand-lg navbar-light bg-cus ">
-  <a class="navbar-brand" href="#" style="color:white; font-weight: bold;"><i style="font-size:30px; color:white; " class="fas fa-graduation-cap"></i>ระบบบริการการศึกษา</a>
+        <a class="navbar-brand" href="#" style="color:white; font-weight: bold;"><img  class="logo" src="./image/logoTH.png"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -375,7 +384,7 @@ p.intro2 {
       </div>
 </div>
 
-<br><br><br><br><br><br><br>
+    </div>
         
         
 <div class="row align-items-center">
